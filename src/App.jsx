@@ -1,4 +1,5 @@
 import './App.scss';
+import Footer from './components/Footer/Footer';
 import Header from './components/Header/Header';
 import Hero from './components/Hero/Hero';
 import Opportunity from './components/Opportunity/Opportunity';
@@ -15,6 +16,7 @@ function App() {
         <Working />
         <Opportunity />
       </main>
+      <Footer />
     </>
   );
 }
