@@ -1,0 +1,119 @@
+.service{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    &__items{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap:30px 10px;
+    }
+}
+
+.serviceItem{
+    display: flex;
+    // max-width: 300px;
+    flex-direction: column;
+
+    backdrop-filter: opacity(20%);
+    background: url("../../assets/image/service-item-back.png") no-repeat;
+    background-size: 100% 100%;
+    &__title{
+        font-size: 35px;
+        font-weight: 600;
+        
+        color: white;
+        // margin: 10px 0;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .service{
+        &__title{
+            margin: 50px auto;
+            font-size: 50px;
+            font-weight: 800;
+            color: white;
+        }
+        &__items{
+            margin-inline-start: 20px;
+            margin-inline-end: 20px;
+            display: flex;
+            justify-content: center;
+        }
+    }
+    .serviceItem{
+        text-align: left;
+        padding: 10px 106px 40px 40px;
+        max-width: 100%;
+        &__title{
+            font-size: 45.95px;
+        }
+        &__btn{
+            font-size: 21px;
+        }
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .service{
+        &__title{
+            margin: 30px auto;
+            font-size: 35px;
+            font-weight: 800;
+            color: white;
+        }
+    }
+    .serviceItem{
+            padding:10px 65px 30px 30px;
+        width: 218px;
+        &__title{
+            font-size: 20px;
+        }
+        &__btn{
+            font-size: 9.4px;
+        }
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .service{
+        &__title{
+            margin: 40px auto;
+            font-size: 40px;
+        }
+    }
+    .serviceItem{
+        padding: 10px 108px 40px 40px;
+        width: 278px;
+        &__title{
+            font-size: 29px;
+            line-height: 40px;
+        }
+        &__btn{
+            font-size: 12.28px;
+        }
+    }
+}
+
+@media screen and (min-width: 1140px) {
+    .service{
+        &__title{
+            margin: 50px auto;
+            font-size: 50px;
+            font-weight: 800;
+            color: white;
+        }
+    }
+    .serviceItem{
+        padding:10px 85px 30px 30px;
+        width: 300px;
+        &__title{
+            font-size: 34.5px;
+        }
+        &__btn{
+            font-size: 16px;
+        }
+    }
+}
