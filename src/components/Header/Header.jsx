@@ -40,7 +40,7 @@ const Header = () => {
                     <a href="#results" className="nav__link">Результат</a>
                 </li>
                 <li className="nav__item">
-                    <a href="#a" className="nav__link">Заказать</a>
+                    <a href="#contact" className="nav__link">Заказать</a>
                 </li>
                 <li className='nav__item'>
                     <a data-label="Позвонить" className='call' href="tel:998998998">
