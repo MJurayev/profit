@@ -1,7 +1,6 @@
 import React from 'react';
 import "./Services.scss"
 import "react-responsive-carousel/lib/styles/carousel.min.css"
-import { Carousel } from 'react-responsive-carousel';
 import Button from '../Button/Button'
 import ServiceItemsResponsive from './ServiceItemsResponsive';
 const Services = () => {
