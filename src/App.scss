@@ -1,0 +1,37 @@
+
+
+@media screen and (max-width: 540px){
+  .container{
+    padding-left: 33px;
+    padding-right: 33px;
+  }
+}
+
+@media screen and (min-width: 540px){
+  .container{
+    max-width: 1240px;
+    margin: auto;
+    padding-left: 33px;
+    padding-right: 33px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container{
+    padding-left:39px;
+    padding-right:39px;
+  }
+}
+@media screen and (min-width: 992px) {
+  .container{
+    padding-left:19px;
+    padding-right:19px;
+  }
+}
+
+
+@media screen and (min-width: 1140px) {
+  .container{
+    padding-left:101px;
+    padding-right:101px;
+  }
+}
