@@ -22,9 +22,12 @@ html{
   box-sizing: border-box;
 }
 
-
+html{
+  scroll-behavior: smooth;
+}
 body {
   overflow-x: hidden;
+  
   font-size: 16px;
   margin: 0;
   background: linear-gradient(180deg, #131A15 0%, #090B3A 100%) no-repeat; 

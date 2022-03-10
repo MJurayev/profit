@@ -18,10 +18,10 @@ const Header = () => {
         return () => { window.removeEventListener('click' , handleClose) }
     }, [open])
     return (
-        <header className='header container'>
+        <header id="header"    className='header container'>
             <picture>
                 <source srcSet={tabletMask} media='(max-width: 1140px)' />
-                <img className='header-mask'  src={mask} />
+                <img className='header-mask'  src={mask} alt=""/>
             </picture>
             <a className='header__logo' href="/">
                     <img src={logo} className="header__logo__img" alt="Logo" />
@@ -31,16 +31,16 @@ const Header = () => {
             </div>
             <ul ref={listRef} className={`header__nav nav ${open ? 'nav--open' :''}`}>
                 <li className="nav__item">
-                    <a href="#" className="nav__link">Услуги</a>
+                    <a href="#service" className="nav__link">Услуги</a>
                 </li>
                 <li className="nav__item">
-                    <a href="#" className="nav__link">Как мы работаем</a>
+                    <a href="#working" className="nav__link">Как мы работаем</a>
                 </li>
                 <li className="nav__item">
-                    <a href="#" className="nav__link">Результат</a>
+                    <a href="#results" className="nav__link">Результат</a>
                 </li>
                 <li className="nav__item">
-                    <a href="#" className="nav__link">Заказать</a>
+                    <a href="#a" className="nav__link">Заказать</a>
                 </li>
                 <li className='nav__item'>
                     <a data-label="Позвонить" className='call' href="tel:998998998">
