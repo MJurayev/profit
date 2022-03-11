@@ -1,4 +1,5 @@
 import './App.scss';
+import Contact from './components/Contact/Contact';
 import Footer from './components/Footer/Footer';
 import Header from './components/Header/Header';
 import Hero from './components/Hero/Hero';
@@ -10,12 +11,14 @@ function App() {
   return (
     <>
       <Header />
-      <main className='main'>
+      
         <Hero />
+      <div className='main'>
         <Services />
         <Working />
         <Opportunity />
-      </main>
+        <Contact />
+      </div>
       <Footer />
     </>
   );
