@@ -13,7 +13,6 @@ const Contact = () => {
     const chatId = '-717291687'
 
     const URL = `http://api.telegram.org/bot${token}/sendMessage?chat_id=${chatId}&parse_mode=html`
-    const [loading, setLoading] = useState(false)
     const handleChangeInput = (e) => {
         setState(info => {
             return {...info, [e.target.name]:e.target.value }
@@ -21,27 +20,24 @@ const Contact = () => {
     }
     const [step, setStep] = useState(3)
     const handleSubmit = () => {
-        setLoading(true)
-        const text = `
-            Name:${state.name}<br>
-            Service:${state.service}<br>
-            Phone:${state.phone}`
+        // setLoading(true)
+        const text = `<b>Name:${state.name}</b>\nService:${state.service}\nPhone:${state.phone}`
         
-        fetch(`${URL}&text=${text}`, {
+        fetch(`${URL}&text=${encodeURIComponent(text)}`, {
             method:"POST"
+        }).then(res => res.ok ? res.json() : Promise.reject(res))
+        .then(res => {
+            console.log(res)
+            console.log(state)
+            setStep(2)
         })
-            .then(res => res.ok ? res.json() : Promise.reject(res))
-            .then(res => {
-                console.log(res)
-                console.log(state)
-            })
-            .catch(err => {
-                console.log(err)
-            })
-            .finally(() => {
-                setLoading(false)
-            })
-        setStep(2)
+        .catch(err => {
+            alert(err?.message || "Something went wrong!!!")
+        })
+        .finally(() => {
+            // setLoading(false)
+        })
+        
     }
     return (
         <section id='contact' className='contactSection container'>
@@ -87,7 +83,7 @@ const Contact = () => {
                                     type="text" />
                                 <Button
                                     className="contact__form__inputs__btn"
-                                    onClick={handleSubmit}>
+                                    onClick={() => {handleSubmit()}}>
                                     Получить
                                 </Button>
                             </form>
