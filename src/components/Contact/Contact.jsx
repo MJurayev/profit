@@ -18,7 +18,7 @@ const Contact = () => {
             return {...info, [e.target.name]:e.target.value }
         })
     }
-    const [step, setStep] = useState(3)
+    const [step, setStep] = useState(0)
     const handleSubmit = () => {
         // setLoading(true)
         const text = `<b>Name:${state.name}</b>\nService:${state.service}\nPhone:${state.phone}`
