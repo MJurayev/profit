@@ -15,7 +15,11 @@ const Header = () => {
             }
         }
         window.addEventListener('click', handleClose)
-        return () => { window.removeEventListener('click' , handleClose) }
+        window.addEventListener('scroll', handleClose)
+        return () => {
+            window.removeEventListener('click', handleClose)
+            window.removeEventListener('scroll', handleClose)
+        }
     }, [open])
     return (
         <header id="header"    className='header container'>
