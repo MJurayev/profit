@@ -4,6 +4,7 @@ import logo from '../../assets/image/profit-logo.svg'
 import phone from '../../assets/icons/phone-outgoing.svg'
 import mask from '../../assets/image/hero-mask.png'
 import tabletMask from '../../assets/image/mask-tablet.png'
+import desktopMask from '../../assets/image/hero-desktop-gradient.png'
 import Toggle from '../Icons/Toggle';
 const Header = () => {
     const listRef = useRef()
@@ -25,6 +26,7 @@ const Header = () => {
         <header id="header"    className='header container'>
             <picture>
                 <source srcSet={tabletMask} media='(max-width: 1140px)' />
+                <source srcSet={desktopMask} media='(min-width: 1140px)' />
                 <img className='header-mask'  src={mask} alt=""/>
             </picture>
             <a className='header__logo' href="/">
