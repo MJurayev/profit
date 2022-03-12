@@ -1,4 +1,7 @@
-
+.container{
+   max-width: 1240px;
+   width: 100%;
+}
 
 @media screen and (max-width: 540px){
   .container{
@@ -9,7 +12,7 @@
 
 @media screen and (min-width: 540px){
   .container{
-    max-width: 1240px;
+   
     margin: auto;
     padding-left: 33px;
     padding-right: 33px;
