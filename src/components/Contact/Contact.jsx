@@ -57,7 +57,7 @@ const Contact = () => {
                         <div className='contact__form__start'>
                             <h3 className='contact__form__start__title'>Получить бесплатную консультацию</h3>
                             <p className='contact__form__start__description'>В рамках консультации уточним необходимую информацию  для анализа вашего проекта</p>
-                            <Button onClick={() => {setStep(1)}}>Получить</Button>
+                            <Button className="contact__form__start__btn" onClick={() => {setStep(1)}}>Получить</Button>
                         </div> : step===1 ? <div className='contact__form__fields contact__open'>
                             <form className='contact__form__inputs'>
                                 <h3 className='contact__form__start__title'>Получить бесплатную консультацию</h3>

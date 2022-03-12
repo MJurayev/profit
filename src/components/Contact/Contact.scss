@@ -34,6 +34,8 @@
             font-size: 45px;
             line-height: 55px;
             font-weight: 800;
+
+            
         }
 
         &__description{
@@ -165,103 +167,109 @@
 }
     .contact{
     color: white;
-    
     display: flex;
     background: linear-gradient(90deg, rgba(255, 255, 255, 0.1) -1.79%, rgba(255, 255, 255, 0.024) 123.08%);
     backdrop-filter: blur(120px);
     border-radius: 30px;
     
     &__content{
-        padding: 10px 40px 40px 80px;
-        // padding-left: 80px;
-        // padding-right: 40px;
-        // padding-top: 10px;
-        // padding-bottom: 40px;
-    }
-    &__title{
-        margin: 0;
-        margin: 15px 0;
-        font-weight: 800;
-        font-size: 45px;
+            padding: 10px 40px 40px 80px;
+            // padding-left: 80px;
+            // padding-right: 40px;
+            // padding-top: 10px;
+            // padding-bottom: 40px;
+        }
+        &__title{
+            margin: 0;
+            margin: 15px 0;
+            font-weight: 800;
+            
+            font-size: 37.7742px;
+        }
 
-    }
+        &__description{
+            
 
-    &__description{
-        font-size: 30px;
-    }
+            font-size: 22.6645px;
+            line-height: 26px;
+        }
 
-    &__form{
-        display: flex;
-        flex-direction: column;
-        
-        width: 446px;
-        flex-shrink: 0;
-        background: linear-gradient(90deg, rgba(255, 255, 255, 0.1) -1.79%, rgba(255, 255, 255, 0.024) 123.08%), #000000;
-        backdrop-filter: blur(120px);
-        /* Note: backdrop-filter has minimal browser support */
-
-        border-radius: 30px;
-        padding: 30px;
-        &__successfully{
+        &__form{
             display: flex;
             flex-direction: column;
-            // align-items: center;
-            &::before{
-                content: "";
-                width:75px ;
-                margin: auto;
-                height:75px ;
-                background: url("../../assets/image/success.svg") no-repeat;
-            }
-            &__title{
-                font-size: 40px;
-                font-weight: 800;
-                margin: 10px 0;
-                margin-bottom: 15px;
-            }
-            &__desc{
-                font-size: 22.87px;
-            }
+            width: 248.93px;
+            
+            flex-shrink: 0;
+            background: linear-gradient(90deg, rgba(255, 255, 255, 0.1) -1.79%, rgba(255, 255, 255, 0.024) 123.08%), #000000;
+            backdrop-filter: blur(120px);
+            /* Note: backdrop-filter has minimal browser support */
 
-            &__btn{
-                color: #219653!important;
-            }
+            border-radius: 30px;
+            padding: 15px;
+            &__successfully{
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+                // align-items: center;
+                &::before{
+                    content: "";
+                    width:75px ;
+                    margin: auto;
+                    height:75px ;
+                    background: url("../../assets/image/success.svg") no-repeat;
+                }
+                &__title{
+                    font-size: 22.33px;
+                    font-weight: 800;
+                    margin: 10px 0;
+                    margin-bottom: 15px;
+                }
+                &__desc{
+                    font-size: 11.16px;
+                }
 
-        }
-        &__start{
-            display: flex;
-            flex-direction: column;
-            &__title{
-                font-weight: 800;
-                font-size: 40px;
-                margin: 0;
-                line-height: 50px;
-            }
+                &__btn{
+                    color: #219653!important;
+                    margin-top: auto;
+                }
 
-            &__description{
-                font-weight: 400;
-                font-size: 20px;
-                line-height: 27px;
-                margin: 40px 0; 
             }
+            &__start{
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+                &__title{
+                    font-weight: 800;
+                    font-size: 26.3256px;
+                    margin: 0;
+                    line-height: 28px;
+                }
 
-        }
-        &__inputs{
-            display: flex;
-            flex-direction: column;
+                &__description{
+                    font-weight: 400;
+                    font-size: 16.1628px;
+                    line-height: 15px;
+                    margin: 30px 0; 
+                }
+                &__btn{
+                    margin-top: 30px;
+                    font-size: 11px;
+                }
+            }
+            &__inputs{
+                display: flex;
+                flex-direction: column;
 
-            &__input{
-                margin: 10px 0;
-            }
-            &__btn{
-                margin-top: 30px;
-            }
-            & .contact__form__start__title, & .contact__form__start__description{
-                display: none;
+                &__input{
+                    margin: 5px 0;
+                }
+                
+                & .contact__form__start__title, & .contact__form__start__description{
+                    display: none;
+                }
             }
         }
     }
-}
 
 }
 
@@ -272,5 +280,54 @@
 
 
 @media screen and (min-width: 1140px) {
-    
+    .contact{
+        
+        &__title{
+            font-size: 45px;
+        }
+        &__description{
+            font-size: 30px;
+        }
+
+        &__content{
+            
+        }
+        &__form{
+            padding: 30px;
+
+            width: 446px;
+            &__start{
+                &__title{
+                    font-weight: 800;
+                    font-size: 40px;
+                    line-height: 50px;
+                }
+
+                &__description{
+                    font-weight: 400;
+                    font-size: 20px;
+                    line-height: 27px;
+                    margin: 40px 0; 
+                }
+
+            }
+            &__successfully{    
+                &__title{
+                    font-size: 40px;
+                }
+                &__description{
+                    size :20px;
+                }
+            }
+            &__inputs{
+                
+                &__input{
+                    margin: 10px 0;
+                }
+                &__btn{
+                    margin-top: 30px;
+                }
+            }
+        }
+    }
 }
