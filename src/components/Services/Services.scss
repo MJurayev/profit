@@ -1,30 +1,26 @@
 .service{
+    min-height: 100vh;
     padding-top: 20px;
     padding-bottom: 20px;
     display: flex;
     flex-direction: column;
-    &__items{
+    &__items{   
         display: flex;
         justify-content: space-between;
         flex-wrap: wrap;
-        gap:30px 10px;
+        gap:30px 5px;
     }
 }
 
 .serviceItem{
     display: flex;
-    // max-width: 300px;
     flex-direction: column;
-
-    backdrop-filter: opacity(20%);
-    background: url("../../assets/image/service-item-back.png") no-repeat;
+    background: url("../../assets/image/services-item-grad.png") no-repeat center;
     background-size: 100% 100%;
     &__title{
         font-size: 35px;
         font-weight: 600;
-        
         color: white;
-        // margin: 10px 0;
     }
 }
 
@@ -45,10 +41,13 @@
     }
     .serviceItem{
         text-align: left;
-        padding: 10px 80px 40px 40px;
+        padding: 40px 160px 60px 40px;
+        background-size: 100% 100%;
         max-width: 100%;
+        width: 471px;
+        margin: auto;
         &__title{
-            font-size: 35.95px;
+            font-size: 48px;
         }
         &__btn{
             font-size: 21px;
@@ -64,9 +63,13 @@
             font-weight: 800;
             color: white;
         }
+        &__items{
+            gap: 30px 15px;
+        }
     }
     .serviceItem{
-            padding:10px 65px 30px 30px;
+
+        padding:10px 65px 30px 30px;
         width: 218px;
         &__title{
             font-size: 20px;
@@ -82,6 +85,9 @@
         &__title{
             margin: 40px auto;
             font-size: 40px;
+        }
+        &__items{
+            gap: 30px 5px;
         }
     }
     .serviceItem{
@@ -99,6 +105,7 @@
 
 @media screen and (min-width: 1140px) {
     .service{
+        
         &__title{
             margin: 50px auto;
             font-size: 50px;
@@ -108,9 +115,9 @@
     }
     .serviceItem{
         padding:10px 85px 30px 30px;
-        width: 300px;
+        width: 310px;;
         &__title{
-            font-size: 34.5px;
+            font-size: 35px;
         }
         &__btn{
             font-size: 16px;

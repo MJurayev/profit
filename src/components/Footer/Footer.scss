@@ -4,7 +4,10 @@
     justify-content: center;
     padding-top: 56px;
     padding-bottom: 56px;
-
+    background: linear-gradient(180deg, #131A15 0%, #090B3A 100%);
+    background: url("../../assets/image/footer-gradient.png") no-repeat;
+    background-position: center;
+    background-size:100% 100%;
     &__links{
         margin: 0;
         padding: 0;

@@ -2,7 +2,9 @@ import React from 'react';
 import "./Services.scss"
 import "react-responsive-carousel/lib/styles/carousel.min.css"
 import Button from '../Button/Button'
+import serviceItemMask from '../../assets/image/services-item-grad.svg'
 import ServiceItemsResponsive from './ServiceItemsResponsive';
+import ServiceItemGrad from '../Icons/ServiceItemGrad';
 const Services = () => {
     return (
         <section id='service' className='service container'>
