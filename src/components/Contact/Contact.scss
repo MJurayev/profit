@@ -1,8 +1,10 @@
 
 
 
-
-
+.contact{
+    background: url("../../assets/image/contact-back-grad.png") no-repeat center;
+    background-size: 100% 100%;
+}
 
 @media screen and (max-width: 768px) {
     .contactSection{
@@ -10,32 +12,27 @@
         padding-top: 20px;
         padding-bottom: 70px;
         min-height:963px;
-        position: relative;
+        
         margin-bottom: 30px;
     }
     .contact{
+        position: relative;
         color: white;
         display: flex;
         flex-direction: column;
-        background: linear-gradient(90deg, rgba(255, 255, 255, 0.1) -1.79%, rgba(255, 255, 255, 0.024) 123.08%);
-        backdrop-filter: blur(120px);
-        border-radius: 30px;
-        
+        background: url("../../assets/image/contact-back-grad@mobile.png") no-repeat center;
+        background-size: 100% 100%;
         &__content{
             padding: 10px 40px 40px 20px;
-            // padding-left: 80px;
-            // padding-right: 40px;
-            // padding-top: 10px;
-            // padding-bottom: 40px;
         }
         &__title{
             font-weight: 800;
-            font-size: 30px;
+            font-size: 40px;
         }
 
         &__description{
             font-weight: 600;
-            font-size: 20px;
+            font-size: 24px;
             line-height: 35px;
         }
 
@@ -47,7 +44,7 @@
             
             flex-direction: column;
             width: 100%;
-            flex-shrink: 0;
+            // flex-shrink: 0;
             background: linear-gradient(90deg, rgba(255, 255, 255, 0.1) -1.79%, rgba(255, 255, 255, 0.024) 123.08%), #000000;
             backdrop-filter: blur(120px);
             /* Note: backdrop-filter has minimal browser support */
@@ -59,6 +56,7 @@
                 height: 100%;
                 position: absolute;
                 top: 0;
+                left: 0;
                 width: 100%;
                 animation: heightSlowOpen .3s ease;
             }
@@ -122,13 +120,14 @@
 
             &__inputs{
                 display: flex;
+                height: 100%;
                 flex-direction: column;
 
                 &__input{
                     margin: 10px 0;
                 }
                 &__btn{
-                    margin-top: 30px;
+                    margin-top: auto;
                 }
             }
         }
@@ -163,30 +162,22 @@
     .contact{
     color: white;
     display: flex;
-    background: linear-gradient(90deg, rgba(255, 255, 255, 0.1) -1.79%, rgba(255, 255, 255, 0.024) 123.08%);
-    backdrop-filter: blur(120px);
     border-radius: 30px;
     
-    &__content{
-            padding: 10px 40px 40px 80px;
-            // padding-left: 80px;
-            // padding-right: 40px;
-            // padding-top: 10px;
-            // padding-bottom: 40px;
+        &__content{
+            padding: 0px 40px 40px 60px;
         }
         &__title{
-            margin: 0;
-            margin: 15px 0;
             font-weight: 800;
             
-            font-size: 37.7742px;
+            font-size: 27px;
         }
 
         &__description{
             
-
-            font-size: 22.6645px;
-            line-height: 26px;
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 20px;
         }
 
         &__form{
@@ -200,7 +191,7 @@
             /* Note: backdrop-filter has minimal browser support */
 
             border-radius: 30px;
-            padding: 15px;
+            padding: 20px;
             &__successfully{
                 height: 100%;
                 display: flex;
@@ -235,20 +226,20 @@
                 flex-direction: column;
                 &__title{
                     font-weight: 800;
-                    font-size: 26.3256px;
+                    font-size: 22.3256px;
                     margin: 0;
                     line-height: 28px;
                 }
 
                 &__description{
                     font-weight: 400;
-                    font-size: 16.1628px;
+                    font-size: 11.1628px;
                     line-height: 15px;
-                    margin: 30px 0; 
+                    margin: 10px 0; 
                 }
                 &__btn{
-                    margin-top: 30px;
-                    font-size: 18px;
+                    margin-top: auto;
+                    font-size: 8.93px;
                 }
             }
             &__inputs{
@@ -270,41 +261,39 @@
 
 
 @media screen and (min-width: 992px) {
-    
-}
-
-
-@media screen and (min-width: 1140px) {
     .contact{
         
         &__title{
-            font-size: 45px;
+            font-size: 35px;
+            line-height: 55px;
         }
         &__description{
-            font-size: 30px;
+            font-size: 22px;
         }
 
         &__content{
-            
+            padding: 0px 10px 40px 70px;
         }
         &__form{
             padding: 30px;
 
-            width: 446px;
+            width: 330px;
             &__start{
                 &__title{
                     font-weight: 800;
-                    font-size: 40px;
-                    line-height: 50px;
+                    font-size: 30px;
+                    line-height: 35px;
                 }
 
                 &__description{
                     font-weight: 400;
-                    font-size: 20px;
-                    line-height: 27px;
-                    margin: 40px 0; 
+                    font-size: 15px;
+                    line-height: 20px;
+                    margin: 20px 0; 
                 }
-
+                &__btn{
+                    margin-top: 13px;
+                }
             }
             &__successfully{    
                 &__title{
@@ -321,6 +310,72 @@
                 }
                 &__btn{
                     margin-top: 30px;
+                }
+            }
+        }
+    }
+}
+
+
+@media screen and (min-width: 1140px) {
+    .contact{
+        
+        &__title{
+            font-size: 40px;
+            line-height: 55px;
+        }
+        &__description{
+            font-size: 28px;
+            line-height: 35px;
+        }
+
+        &__content{
+            
+        }
+        &__form{
+            padding: 30px;
+            height: 100%;
+            width: 400px;
+            &__fields{
+                height: 100%;
+            }
+            &__start{
+                &__title{
+                    font-weight: 800;
+                    font-size: 40px;
+                    line-height: 50px;
+                }
+
+                &__description{
+                    font-weight: 400;
+                    font-size: 20px;
+                    line-height: 27px;
+                    margin: 40px 0; 
+                }
+                &__btn{
+                    font-size: 16px;
+                }
+
+            }
+            &__successfully{    
+                &__title{
+                    font-size: 40px;
+                }
+                &__description{
+                    size :20px;
+                }
+                &__btn{
+                    font-size: 16px;
+                }
+            }
+            &__inputs{
+                height: 100%;
+                &__input{
+                    margin: 10px 0;
+                }
+                &__btn{
+                    margin-top: auto;
+                    font-size: 16px;
                 }
             }
         }

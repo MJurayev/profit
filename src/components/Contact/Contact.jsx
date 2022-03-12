@@ -41,11 +41,14 @@ const Contact = () => {
     }
     return (
         <section id='contact' className='contactSection container'>
-            <div className='contactSection__contact contact'>
+            <div className='contactSection__contact contact'>   
                 <div className='contact__content'>
                     <h3 className='contact__title'>Сколько стоят услуги</h3>
                     <p className='contact__description'>
-                        Цена рассчитывается индивидуально в зависимости отсложности, объема и сроков работы. Разработчик оценивает временные затраты по проекту, а аналитики устанавливают стоимость продукта.
+                        Цена рассчитывается индивидуально в зависимости отсложности, объема и сроков работы.
+                        <br />
+                        <br />
+                        Разработчик оценивает временные затраты по проекту, а аналитики устанавливают стоимость продукта.
                     </p>
                 </div>
                 <div className={`contact__form ${step!==0 ? 'contact__form--open' : ""}`}>
