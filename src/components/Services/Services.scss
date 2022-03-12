@@ -1,7 +1,8 @@
 .service{
-    min-height: 100vh;
+    // min-height: 90vh;
     padding-top: 20px;
     padding-bottom: 20px;
+    // max-height: fit-content;
     display: flex;
     flex-direction: column;
     &__items{   
@@ -64,7 +65,7 @@
             color: white;
         }
         &__items{
-            gap: 30px 15px;
+            gap: 30px 10px;
         }
     }
     .serviceItem{
@@ -91,7 +92,7 @@
         }
     }
     .serviceItem{
-        padding: 10px 108px 40px 40px;
+        padding: 10px 60px 40px 40px;
         width: 278px;
         &__title{
             font-size: 29px;
@@ -105,7 +106,9 @@
 
 @media screen and (min-width: 1140px) {
     .service{
-        
+        &__items{
+            gap: 30px 13px;
+        }
         &__title{
             margin: 50px auto;
             font-size: 50px;
