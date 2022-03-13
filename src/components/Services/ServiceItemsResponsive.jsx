@@ -14,12 +14,15 @@ const ServiceItemsResponsive = ({ children }) => {
     }, [])
     if(mobile)
     return (
-        <Carousel showThumbs={false} swipeable={true} showStatus={false} showIndicators={false} centerSlidePercentage={100} centerMode={true} className='service__items'>
+        <Carousel showArrows={false} showThumbs={false} swipeable={true} showStatus={false} showIndicators={false} centerSlidePercentage={100} centerMode={true} className='service__items'>
+            <div className='prev__btn'></div>
+            <div className='next__btn'></div>
             {children}
         </Carousel>
         );
     return (
         <div className='service__items'>
+            
             {children}
         </div>
     )

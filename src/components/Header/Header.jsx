@@ -23,7 +23,7 @@ const Header = () => {
         }
     }, [open])
     return (
-        <header id="header"    className='header container'>
+        <header id="header" className='header container'>
             <picture>
                 <source srcSet={tabletMask} media='(max-width: 1140px)' />
                 <source srcSet={desktopMask} media='(min-width: 1140px)' />
