@@ -6,15 +6,15 @@ const Working = () => {
             <h2 className='working__title'>Как мы работаем </h2>
             <div className='working__items'>
                 <div className='workingItem'>
-                    <h3 className='workingItem__title'>Исследование ниши и стратегия развития</h3>
+                    <h3 className='workingItem__title'>Исследование ниши и <br /> стратегия развития</h3>
                 </div>
 
                 <div className='workingItem'>
-                    <h3 className='workingItem__title'>Прототипирование UI | UX дизайна для продукта</h3>
+                    <h3 className='workingItem__title'>Прототипирование UI | UX<br /> дизайна для продукта</h3>
                 </div>
 
                 <div className='workingItem'>
-                    <h3 className='workingItem__title'>Анализ конкурентов и юзабилити тесты</h3>
+                    <h3 className='workingItem__title'>Анализ конкурентов и <br /> юзабилити тесты</h3>
                 </div>
 
                 <div className='workingItem'>
@@ -22,11 +22,11 @@ const Working = () => {
                 </div>
 
                 <div className='workingItem'>
-                    <h3 className='workingItem__title'>Семантическая структура и оптимизация</h3>
+                    <h3 className='workingItem__title'>Семантическая структура <br /> и оптимизация</h3>
                 </div>
 
                 <div className='workingItem'>
-                    <h3 className='workingItem__title'>Финальное тестирование и запуск продукта</h3>
+                    <h3 className='workingItem__title'>Финальное тестирование  <br />и запуск продукта</h3>
                 </div>
             </div>
         </section>
