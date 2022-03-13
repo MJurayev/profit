@@ -36,31 +36,49 @@
             color: white;
         }
         &__items{
-            position: relative;
             margin-inline-start: 20px;
             margin-inline-end: 20px;
             display: flex;
             justify-content: center;
+            align-items: center;
+            &__carousel{
+                display: flex;
+                position: relative;
+                justify-content: center;
+                align-items:center ;
+
+                width: 100%;
+            }
         }
         .prev__btn, .next__btn{
             position: absolute;
-            margin:auto;
             width: 95px;
             height: 95px;
             z-index: 9;
+            display: flex;
+            cursor: pointer;
+            top: 50%;
+            transform: translateY(-50%);
+            &:hover{
+                opacity: 0.7;
+            }
         }
         .next__btn{
             right: 0;
-            
+            margin-right: -66px;
             background: url("../../assets/image/next-btn.png") no-repeat center;
         }
 
         .prev__btn{
             left: 0;
+             margin-left: -66px;
             background: url("../../assets/image/prev-btn.png") no-repeat center;
 
         }
 
+    }
+    .carousel{
+        overflow: visible!important;
     }
     .serviceItem{
         text-align: left;
