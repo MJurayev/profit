@@ -90,13 +90,14 @@
     .workingItem{
         width: 100%;
         &__title{
-            font-size: 28px;
+            font-size: 24px;
             font-weight: 600;
-            line-height: 40px;
+            line-height: 36px;
         }
         &::before{
-            width:80px;
-            height: 80px;
+            width:68px;
+            height: 68px;
+            margin-right: 10px;
         }
     }
 }
